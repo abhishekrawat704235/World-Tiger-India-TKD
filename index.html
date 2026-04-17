@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Tiger India Taekwondo Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+   </head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">WORLD TIGER INDIA <span>TKD</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#instructors">Team</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join Now</button>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU (hidden by default) -->
+<div id="mobileMenu" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.97); z-index:99; flex-direction:column; align-items:center; justify-content:center; gap:32px;">
+  <button onclick="toggleMenu()" style="position:absolute;top:24px;right:24px;background:none;border:none;color:white;font-size:2rem;cursor:pointer;">✕</button>
+  <a href="#home" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:white;text-decoration:none;">HOME</a>
+  <a href="#about" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:white;text-decoration:none;">ABOUT</a>
+  <a href="#classes" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:white;text-decoration:none;">CLASSES</a>
+  <a href="#schedule" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:white;text-decoration:none;">SCHEDULE</a>
+  <a href="#instructors" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:white;text-decoration:none;">TEAM</a>
+  <a href="#contact" onclick="toggleMenu()" style="font-family:'Bebas Neue';font-size:2.5rem;letter-spacing:4px;color:red;text-decoration:none;">JOIN NOW</a>
+</div>
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🥋 Martial Arts Excellence</div>
+    <h1 class="hero-title">
+      <span style="display:block;">World Tiger India </span>
+      <span class="line2" style="display:block;">TAEKWONDO</span>
+      <span class="line3" style="display:block;">ACADEMY</span>
+    </h1>
+    <p class="hero-sub">Strength, Discipline, Honor. Apne andar ka warrior jagao — beginner se black belt tak ka safar shuru karo.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Free Trial Class</a>
+      <a href="#classes" class="btn-outline">View Classes</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Years</div></div>
+    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Students</div></div>
+    <div class="stat"><div class="stat-num">80+</div><div class="stat-label">Medals</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual fade-up">
+    <div class="about-box about-box-1"><img src="1.jpeg" alt="About Image"></img></div>
+    <div class="about-box about-box-2">
+      <div class="about-icon">
+        
+      </div>
+    </div>
+    <div class="about-badge">
+      <div class="num">2009</div>
+      <div class="txt">Est. Year</div>
+    </div>
+  </div>
+  <div class="fade-up">
+    <p class="section-tag">Our Story</p>
+    <h2 class="section-title">지도 사범 <BR>
+GRANDMASTER —<br><span style="color:var(--red)">WAN YONG LEE</span></h2>
+    <p class="section-sub"> Member of
+
+Head Coach of the
+
+Asian Taekwondo Union
+
+Indian National Team for the
+
+(ATU) Technical and
+
+2025 Asian Taekwondo
+
+Development Committee
+
+Championships and
+2025 World Taekwondo
+
+· Founder of Korean Cultural
+
+Championships
+
+Centre India Taekwondo
+Demonstration Team
+
+· 10 years of service at the
+Korean Cultural Centre India
+
+· Demonstration and Poomsae
+
+Taekwondo Academy
+
+Master of the Korean Tigers
+Team (2002-2008)
+
+· International Referee in
+Kyorugi and Poomsae</p>
+    <div class="about-points">
+      <div class="about-point">
+        <div class="point-icon">🏆</div>
+        <div class="point-text">
+          <strong>World-Class Coaching</strong>
+          <span>Train with national and international certified instructors</span>
+        </div>
+      </div>
+      <div class="about-point">
+        <div class="point-icon">🛡️</div>
+        <div class="point-text">
+          <strong>Safe Environment</strong>
+          <span>Safe training with padded floors, proper gear, and a structured curriculum</span>
+        </div>
+      </div>
+      <div class="about-point">
+        <div class="point-icon">⭐</div>
+        <div class="point-text">
+          <strong>All Age Groups</strong>
+          <span>From 4-year-olds to adults – there are programs for everyone</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSES -->
+<section id="classes">
+  <div style="text-align:center; margin-bottom:60px;" class="fade-up">
+    <p class="section-tag">Training Programs</p>
+    <h2 class="section-title">CHOOSE YOUR <span style="color:var(--red)">BATTLE</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Dedicated programs for every level – start your journey at your own pace.</p>
+  </div>
+  <div class="classes-grid fade-up">
+    <div class="class-card">
+      <div class="class-badge">BEGINNERS</div>
+      <div class="class-icon">👦</div>
+      <div class="class-name">KIDS PROGRAM</div>
+      <p class="class-desc">Fun and structured training for children ages 4–12. Builds discipline, focus, and confidence.</p>
+      <div class="class-info">
+        <span>Age: 4 – 12 years</span>
+        <span>Mon, Wed, Fri – 4:00 PM</span>
+        <span>₹8,000 / month</span>
+        <span>Batch size: 15 max</span>
+      </div>
+    </div>
+    <div class="class-card featured">
+      <div class="class-badge">POPULAR</div>
+      <div class="class-icon">🥊</div>
+      <div class="class-name">ADULTS PROGRAM</div>
+      <p class="class-desc">13–40 saal ke liye complete Taekwondo training — fitness, self-defense, aur belt progression ke saath.</p>
+      <div class="class-info">
+        <span>Age: 13 – 40 years</span>
+        <span>Tue, Thu, Sat – 6:30 PM</span>
+        <span>₹6,000 / month</span>
+        <span>Batch size: 20 max</span>
+      </div>
+    </div>
+    <div class="class-card">
+      <div class="class-badge">ELITE</div>
+      <div class="class-icon">🏅</div>
+      <div class="class-name">ADVANCED / COMPETITION</div>
+      <p class="class-desc">State aur National competitions ke liye intensive training. Sirf Blue belt aur above ke liye.</p>
+      <div class="class-info">
+        <span>Age: 10+ (Blue belt+)</span>
+        <span>Daily – 2:30 pM</span>
+        <span>₹8,000 / month</span>
+        <span>Batch size: 10 max</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BELT CHART -->
+<section id="belts">
+  <div class="fade-up" style="text-align:center; margin-bottom:50px;">
+    <p class="section-tag">Belt Progression</p>
+    <h2 class="section-title">YOUR PATH TO <span style="color:var(--red)">BLACK BELT</span></h2>
+  </div>
+  <div class="belt-track fade-up">
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#ffffff;"></div>
+      <div class="belt-name">White</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#f5f0a0;"></div>
+      <div class="belt-name">Yellow</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#f5a000; background: linear-gradient(90deg,#f5f0a0,#f5a000);"></div>
+      <div class="belt-name">Yellow/Green</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#2ecc71;"></div>
+      <div class="belt-name">Green</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:linear-gradient(90deg,#2ecc71,#3498db);"></div>
+      <div class="belt-name">Green/Blue</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#3498db;"></div>
+      <div class="belt-name">Blue</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:linear-gradient(90deg,#3498db,#e74c3c);"></div>
+      <div class="belt-name">Blue/Red</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:#e74c3c;"></div>
+      <div class="belt-name">Red</div>
+    </div>
+    <div class="belt-item">
+      <div class="belt-stripe" style="background:linear-gradient(90deg,#e74c3c,#1a1a1a); border:1px solid #555;"></div>
+      <div class="belt-name">Red/Black</div>
+    </div>
+    <div class="belt-item active">
+      <div class="belt-stripe" style="background:#1a1a1a; border:1px solid #888; box-shadow: 0 0 12px rgba(232,25,44,0.6);"></div>
+      <div class="belt-name" style="color:var(--red);font-weight:700;">⭐ Black</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <div class="fade-up" style="margin-bottom:40px;">
+    <p class="section-tag">수업 시간 Timetable</p>
+    <h2 class="section-title">WEEKLY <span style="color:var(--red)">SCHEDULE</span></h2>
+  </div>
+  <div class="fade-up" style="overflow-x:auto;">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Batch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>4:15 – 5:15 PM</td>
+          <td>Batch 1</td>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>5:20 – 6:20 PM</td>
+          <td>Batch 2</td>
+        </tr>
+        <tr>
+           <tr>
+          <td>Monday</td>
+          <td>6:30 – 7:30 PM</td>
+          
+          <td>Batch 3</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+           <td>4:15 – 5:15 PM</td>
+         
+          <td>Batch 1</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>5:20 – 6:20 PM</td>
+         
+          <td>Batch 2</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday</td>
+          <td>6:30 – 7:30 PM</td>
+          
+          <td>Batch 3</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday</td>
+          <td>4:15 – 5:15 PM</td>
+          <td>Batch 1</td>
+          
+        </tr>
+         <tr>
+          <td>Wednesday</td>
+          <td>5:20 – 6:20 PM</td>
+          <td>Batch 2</td>
+          
+        </tr>
+         <tr>
+          <td>Wednesday</td>
+          <td>6:30 – 7:30 PM</td>
+          <td>Batch 3</td>
+
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>4:15 – 5:15 PM</td>
+          <td>Batch 1</td>
+          
+        </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>5:20 – 6:20 PM</td>
+            <td>Batch 2</td>
+          </tr>
+
+        <tr>
+          <td>Thursday</td>
+          <td>6:30 – 7:30 PM</td>
+          <td>Batch 3</td>
+        </tr>
+
+
+
+
+        <tr>
+          <td>Friday</td>
+          <td>4:15 – 5:15 PM</td>
+          <td>Batch 1</td>
+
+        </tr>
+          <tr>
+            <td>Friday</td>
+            <td>5:20 – 6:20 PM</td>
+            <td>Batch 2</td>
+
+          </tr>
+        <tr>
+          <td>Friday</td>
+          <td>6:30 – 7:30 PM</td>
+          <td>Batch 3</td>
+
+      <tr>
+          <td>Saturday</td>
+          <td>1:15 – 2:15 PM</td>
+          <td>Batch 1</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>2:20 – 3:20 PM</td> 
+          <td>Batch 2</td>
+
+        </tr>
+          <td>Saturday</td>
+          <td>3:30 – 4:30 PM</td> 
+   <td>Batch 3</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- INSTRUCTORS -->
+<section id="instructors">
+  <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+    <p class="section-tag">Our Team</p>
+    <h2 class="section-title">MEET THE <br>
+      <span style="color:var(--red)">  GRANDMASTER지도 사범      MASTER주인 </span></h2>
+  </div>
+  <div class="instructors-grid fade-up">
+    <div class="instructor-card">
+      <div class="instructor-photo1"></div>
+      <div class="instructor-info">
+        <div class="instructor-name">GRANDMASTER 지도 사범 WAN YONG LEE </div>
+        <div class="instructor-rank"> Head Coach of the
+Asian Taekwondo Union
+Indian National Team  and Development Committee
+2025 Asian Taekwondo·<br>
+Korean Cultural Centre India
+Taekwondo Academy Member of
+Asian Taekwondo Union
+(ATU) Technical and
+Development Committee,<br>
+
+Founder of Korean Cultural
+Centre India Taekwondo
+Demonstration Team 
+<br>
+
+Demonstration and Poomsae
+Master of the Korean Tigers
+Team (2002-2008) </div>
+    
+      </div>
+    </div>
+    <div class="instructor-card">
+      <div class="instructor-photo2"></div>
+      <div class="instructor-info">
+        <div class="instructor-name"> MASTER주인 Harsh gurung   </div>
+        <div class="instructor-rank">  2022 World Championship (korea) <br> Asian championship 2024 in Vietnam (da nang city ) <br>15 years of experience in teaching children. <br>NIS CERTIFIED <br> 2018 National champion <br>10 year work in Korean cultural center as a taekwondo demonstration team member<br> 2 years as a team captain</div>
+     
+      </div>
+    </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+    <p class="section-tag">Media</p>
+    <h2 class="section-title">ACTION <span style="color:var(--red)">GALLERY</span></h2>
+  </div>
+  
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="fade-up" style="text-align:center; margin-bottom:60px;">
+    <p class="section-tag">Reviews</p>
+    <h2 class="section-title">STUDENTS <span style="color:var(--red)">Feedback</span></h2>
+  </div>
+  <div class="testimonials-grid fade-up">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"My son was very shy at first. After six months of training, his confidence and discipline have improved significantly. Joining here was the best decision!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">👩</div>
+        <div>
+          <div class="author-name">Sunita Sharma</div>
+          <div class="author-belt">Parent of Yellow Belt Student</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">" MASTER주인 Harsh gurung His teaching style is completely unique. The training is tough, but it also comes with a lot of support. I earned my blue belt in two years.!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">👦</div>
+        <div>
+          <div class="author-name">Rohit Gupta</div>
+          <div class="author-belt">Blue Belt · 2 Years Student</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Winning a gold medal at the State Championship was a dream. It wouldn't have been possible without World Tiger India Taekwondo Academy. The coaches truly care for their students."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">🧑</div>
+        <div>
+          <div class="author-name">Kavita Nair</div>
+          <div class="author-belt">Red Belt · State Champion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info fade-up">
+    <div>
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">FREE TRIAL<br><span style="color:var(--red)">CLASS LELO</span></h2>
+      <p style="color:var(--gray); font-size:0.95rem; line-height:1.7; margin-top:12px;">Pehli class bilkul free hai. Aao, dekho, feel karo — phir decide karo.</p>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div class="contact-detail">
+        <strong>Address</strong>
+        <span> Excelsior American School,
+Golf course road, behind Dell building,
+Block C2, DLF Phase 1, Sector 43,
+Gurugram, Haryana <br>New Delhi – 122009</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📞</div>
+      <div class="contact-detail">
+        <strong>Phone / WhatsApp</strong>
+        <span>KR.MASTER📞 +91 8376890889 </span><BR>
+        <span>IND.MASTER📞 +91 9958074224</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🕐</div>
+      <div class="contact-detail">
+        <strong>Academy Hours</strong>
+        <span>Mon–Sat: 6:00 AM – 9:00 PM<br>Sunday: 8:00 AM – 1:00 PM</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <div class="contact-detail">
+        <strong>Email</strong>
+        <span>info@WorldTigerIndia.tkd.in</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form fade-up">
+      <form id="contactForm">
+    <h3 style="font-family:'Bebas Neue'; font-size:1.8rem; letter-spacing:3px; margin-bottom:8px;">ENQUIRY FORM</h3>
+    <p style="color:var(--gray); font-size:0.9rem; margin-bottom:24px;">You will get a response from our team soon..</p>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Full Name</label>
+       <input type="text" id="fullName" placeholder="Full Name"/>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="+91 00000 00000"/>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Age (years)"/>
+      </div>
+      <div class="form-group">
+        <label>Program</label>
+        <select id="program">
+          <option>Select Program...</option>
+          <option>Kids (4–12)</option>
+          <option>Adults (13–40)</option>
+          <option>Advanced / Competition</option>
+          <option>Not Sure – Advice Chahiye</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Your Email"/>
+    </div>
+    <div class="form-group">
+      <label>Message (Optional)</label>
+      <textarea id="message" rows="4" placeholder="DROP YOUR QUERY HERE"></textarea>
+    </div>
+    <button class="submit-btn" onclick="handleSubmit()">SEND ENQUIRY →</button>
+    <p id="formMsg" style="display:none; color:#2ecc71; margin-top:12px; font-size:0.9rem;">✅ Thank you! Humari team jaldi contact karegi.</p>
+      </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">World Tiger India <span>TKD</span></div>
+    <p class="footer-desc">Discipline se shuru, champion pe khatam. Join India's most passionate Taekwondo community.</p>
+    <div class="social-links">
+      <a class="social-link" href="https://www.instagram.com/world_tigerindia?igsh=bzd0ajVnazMybmJ1">📘</a>
+      <a class="social-link" href="https://youtube.com/@harshgurung7906?si=cba3qKQAezNznS2u">▶️</a>
+
+      
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <div class="footer-socials">
+                <ul class="example-2">
+     
+      <li class="icon-content">
+        <a href="https://www.instagram.com/world_tigerindia?igsh=bzd0ajVnazMybmJ1" aria-label="Instagram"
+          data-social="instagram">
+          <div class="filled"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16" xml:space="preserve">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+        <div class="tooltip">Instagram</div>
+      </li>
+      <li class="icon-content">
+        <a href="https://youtube.com/@xr_gaming07?si=Ki77ok-_jHmkpIBE" aria-label="Youtube" data-social="youtube">
+          <div class="filled"></div>
+          <svg xmlns="https://youtube.com/@harshgurung7906?si=cba3qKQAezNznS2u" width="16" height="16" fill="currentColor"
+            class="bi bi-youtube" viewBox="0 0 16 16" xml:space="preserve">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+        <div class="tooltip">Youtube</div>
+      </li>
+    </ul>
+
+            </div>
+        </div>
+  </div>
+  <div class="footer-col">
+    <h4>Programs</h4>
+    <ul>
+      <li><a href="#">Kids (4–12)</a></li>
+      <li><a href="#">Adults (13–40)</a></li>
+      <li><a href="#">Advanced</a></li>
+      <li><a href="#">Competition Prep</a></li>
+      <li><a href="#">Self Defense</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="https://maps.app.goo.gl/5aiHq7trz4ME164W9" target="_blank">📍 Excelsior American School,
+Golf course road, behind Dell building,
+Block C2, DLF Phase 1, Sector 43,
+Gurugram, Haryana 122009</a></li>
+      <li><a href="tel:+918376890889">KR.MASTER📞 +91 8376890889</a></li>
+      <li><a href="tel:+919958074224">IND.MASTER📞 +91 9958074224</a></li>
+      <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcKBhSzFPfSKthmWqbMQStvDjNgWLPQddPNclkMZHSZNLRGtzdnRbPhMjQdSSzmHppGZRB">📧 rokmclwy674@gmail.com</a></li>
+      <li><a href="#">🕐 Mon–Sat: 4:15 pm - 7:30pm</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 World Tiger India Taekwondo Academy. All rights reserved.</span>
+  <span>Made with ❤️ in India 🇮🇳</span>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/919958074224" target="_blank" title="WhatsApp us">💬</a>
+
+<script>del .git/index.lock
+  // Mobile menu toggle
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+  }
+
+  // Google Sheet URL
+  const SHEET_URL = "https://script.google.com/macros/s/AKfycbxlqyP6bLnPFTwes8lxCCOYYn8SZmrJcl4BRqEa5bs3dhDacOMYmsrM0x-FKbZza_3s/exec";
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Nav background on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 60
+      ? 'rgba(0,0,0,0.97)'
+      : 'linear-gradient(to bottom, rgba(0,0,0,0.95), transparent)';
+  });
+
+     const form = document.getElementById("form");
+      const submitButton = document.getElementById("submit-button");
+      const messageDiv = document.getElementById("message");
+      const fileInput = document.getElementById("fileInput");
+      const fileNameDisplay = document.getElementById("fileNameDisplay");
+
+      // Update displayed filename on file selection
+      fileInput.addEventListener("change", function () {
+        if (this.files && this.files.length > 0) {
+          fileNameDisplay.textContent = this.files[0].name;
+        } else {
+          fileNameDisplay.textContent = "No file selected";
+        }
+      });
+
+      // Function to handle file upload
+      async function uploadFile(file) {
+        return new Promise((resolve, reject) => {
+          const fr = new FileReader();
+          fr.onload = (e) => {
+            const data = e.target.result.split(",");
+            const obj = {
+              fileName: file.name,
+              mimeType: data[0].match(/:(\w.+);/)[1],
+              data: data[1],
+            };
+            resolve(obj);
+          };
+          fr.onerror = reject;
+          fr.readAsDataURL(file);
+        });
+      }
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        messageDiv.textContent = "Submitting...";
+        messageDiv.style.display = "block";
+        messageDiv.style.backgroundColor = "beige";
+        messageDiv.style.color = "black";
+        submitButton.disabled = true;
+        submitButton.classList.add("is-loading");
+
+        try {
+  
+          const formData = new FormData(this);
+          const formDataObj = {};
+
+          // Convert FormData to object
+          for (let [key, value] of formData.entries()) {
+            formDataObj[key] = value;
+          }
+            
+          
+          // Handle file upload if a file is selected
+          if (fileInput.files.length > 0) {
+            const fileObj = await uploadFile(fileInput.files[0]);
+            formDataObj.fileData = fileObj; // Add file data to form data
+          }
+          // Send data to Google Sheet
+          await fetch(SHEET_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formDataObj)
+          }); 
+
+          messageDiv.textContent = "✅ Thank you! Humari team jaldi contact karegi."; 
+          messageDiv.style.backgroundColor = "#2ecc71";
+          messageDiv.style.color = "white";
+          form.reset();
+          fileNameDisplay.textContent = "No file selected";
+        } catch (err) {
+          messageDiv.textContent = "Error aa gaya, dobara try karo!";
+          messageDiv.style.backgroundColor = "#e74c3c";
+          messageDiv.style.color = "white";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.classList.remove("is-loading");
+        }
+      });
+
+
+      // Enhance cancel button to reset file input display
+      const cancelButton = form.querySelector("button.is-danger");
+      cancelButton.addEventListener("click", function () {
+        form.reset();
+        fileNameDisplay.textContent = "No file selected";
+        messageDiv.style.display = "none";
+      });
+</script>
+</body>
+</html>
